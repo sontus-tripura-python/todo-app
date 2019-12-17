@@ -1,0 +1,54 @@
+{% extends 'todo/base.html' %}
+
+{% block body %}
+  <div class="homepage">
+  <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="todohomepage">
+    <div class="text-center">
+      <form method="post">
+        {% csrf_token %}
+        {{ form.title}}
+        <input type="submit" name="" value="Add Task" class="btn btn-primary">
+      </form>
+    </div>
+          <div class="todolist">
+            {% for task in tasks %}
+
+            {% if task.complete == True %}
+            <div class="complettaskredmark">
+                <strike >   {{ task }} </strike>  <span>(completed)</span>
+                <div class="btn-btn">
+                  <a href="{% url 'updatetask' task.id %}" class="btn btn-primary">Update</a>
+                  <a href="{% url 'deletetask' task.id %}" class="btn btn-danger">Delete</a>
+                </div>
+
+                  </div>
+
+
+
+            {% else %}
+          <div class="todoTask">
+              <span>{{ task }}</span>
+              <div class="tasktn">
+                <a href="{% url 'updatetask' task.id %}" class="btn btn-primary">Update</a>
+                <a href="{% url 'deletetask' task.id %}" class="btn btn-danger">Delete</a>
+              </div>
+
+          </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.homepage{
+  background: #23172d;
+  min-height: 400px;
+}
+.todohomepage{
+  background: #4b8880;
+  width:770px;
+  min-height: 500px;
+}
+.todolist{
+  padding: 10px;
+  padding-left: 50px;
+}
+#id_title{
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.todoTask{
+  margin-top: 10px;
+  background: #ddd;
+  box-shadow: 2px 2px 3px #000;
+  padding: 10px;
+  color: #000;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.buttontodo{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.tasktn{
+  float: right;
+}
+.complettaskredmark{
+  color: red;
+  background:#ddd;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+
+
+}
+.btn-btn{
+  float: right;
+
+}
