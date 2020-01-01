@@ -52,3 +52,16 @@
   float: right;
 
 }
+.update_section{
+  background: #2af0c2;
+  min-height: 200px;
+}
+.footersection{
+  background: #2af0c2;
+  min-height: 200px;
+}
+.footertitle{
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+}

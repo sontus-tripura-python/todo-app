@@ -4,7 +4,7 @@ from .forms import TaskForm
 # Create your views here.
 def home(request):
     tasks = Task.objects.all()
-    form = TaskForm
+    form = TaskForm()
     if request.method == 'POST':
         form = TaskForm(request.POST)
         if form.is_valid():
